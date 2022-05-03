@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @author Ict Team
+ * @copyright Copyright (c) 2018 Ict (http://icreativetechnologies.com/)
+ * @package Ict_Orderdelete
+*/
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../Config/etc/system_file.xsd">
+    <system>
+        <tab id="ict" translate="label" sortOrder="1">
+            <label>Eug Extension</label>
+        </tab>
+        <section id="orderdelete" translate="label" sortOrder="1" showInDefault="1"
+                 showInWebsite="1" showInStore="1">
+            <label>Order Delete</label>
+            <tab>ict</tab>
+            <resource>Eug_Orderdelete::config_orderdelete</resource>
+
+            <group id="general" translate="label" type="text" sortOrder="1" showInDefault="1"
+                   showInWebsite="1" showInStore="1">
+                <label>General Configuration</label>
+                <field id="enable" translate="label" type="select" sortOrder="1"
+                       showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Enable Order Delete</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

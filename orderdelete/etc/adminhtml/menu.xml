@@ -1,0 +1,6 @@
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Eug_orderdelete::menu" title="Diplome" module="Eug_orderdelete" sortOrder="0" resource="Magento_Backend::system"/>
+        <add id="Eug_orderdelete::submenu" title="Configuration" module="Eug_orderdelete" sortOrder="0" resource="Magento_Backend::system" parent="Eug_orderdelete::menu" action="adminhtml/system_config"/>
+    </menu>
+</config>
